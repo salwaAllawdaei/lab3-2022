@@ -15,4 +15,8 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: bisque;
+}
+footer{
+  background-color: rgb(236, 199, 219);
 }
