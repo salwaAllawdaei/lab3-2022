@@ -9,8 +9,10 @@ public class User
 {
     public int UserId { get; set; }
     public string? Name { get; set; }
-    [RegularExpression(@"^[a-zA-Z0-9_.-]+@@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{0,4}$", ErrorMessage = "please enter the correct form of email example@aaaa.com")]
-
+   [RegularExpression(@"^[a-zA-Z0-9_.-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{0,4}$", ErrorMessage = "please enter the correct form of email example@aaaa.com")]
+  /* [RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+         @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" + 
+         @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$", ErrorMessage = "please enter the correct form of email example@aaaa.com")]*/
     public string? Email { get; set; }
 
     public int? StreetNumber { get; set; }
